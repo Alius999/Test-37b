@@ -12,6 +12,8 @@ module.exports = {
   entry: {
     main: './js/main.js',
     vendor: './js/vendor.js',
+    formfirst: './js/formfirst.js',
+    formsecond: './js/formsecond.js',
   },
   devtool: isDev ? 'source-map' : false,
   output: {

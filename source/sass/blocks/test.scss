@@ -1,0 +1,119 @@
+// @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+// body {
+//     margin: 50px;
+//     font-family: Mulish, sans-serif;
+//     line-height: 1.5;
+// }
+
+
+// table {
+//     display: grid;
+//     row-gap: 20px;
+//     border: none;
+// }
+
+
+// thead {
+//     display: none;
+// }
+
+// tbody {
+//     display: contents;
+// }
+
+
+// tr {
+//     display: grid;
+//     border: 1px solid deepskyblue;
+// }
+
+// tr:first-child {
+//     display: none;
+// }
+
+// .title  {
+//     font-size: 1.2em;
+//     font-weight: bold;
+//     color: deepskyblue;
+//     text-transform: uppercase;
+// }
+
+// td:not(:first-child)::before {
+//     content: attr(data-label) " ";
+// }
+
+// th,
+// td {
+//     padding: .625em;
+//     text-align: center;
+// }
+
+
+// .yes {
+//     color: limegreen;
+// }
+
+// .no {
+//     color: tomato;
+// }
+
+// @media (min-width: 900px) {
+//     table {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr 1fr;
+//     }
+
+//     tr:nth-child(n) {
+//         display: block;
+//         border: none;
+//     }
+
+//     tr:first-child {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: flex-end;
+//     }
+
+//     th, td {
+//         display: block;
+//     }
+
+//     tr:first-child th {
+//         grid-row: 1/2;
+//     }
+
+//     tr:first-child th:nth-child(1) {
+//         grid-column: 1/2;
+//     }
+
+//     tr:first-child th:nth-child(2) {
+//         grid-column: 2/3;
+//     }
+
+//     tr:first-child th:nth-child(3) {
+//         grid-column: 3/4;
+//     }
+
+//     .best-tariff {
+//         background: linear-gradient(180deg, #E8EEFF 0%, #C2F6FF 100%), #F9FBFF;
+//         border-radius: 20px;
+//     }
+
+//     tr:first-child th:nth-child(4) {
+//         grid-column: 4/5;
+//     }
+
+//     td:nth-child(n+2)::before {
+//         display: none;
+//     }
+
+//     td, th {
+//         /*до тех пор, пока не заработает сабгрид*/
+//         min-height: 50px;
+//     }
+
+//     th, td {
+//         border-bottom: 1px solid rgba(0, 191, 255, 0.38);
+//     }
+// }

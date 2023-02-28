@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Тарифы Компании">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico"><!-- 32 x 32 -->
+  <link rel="icon" href="/img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/Arial-400.woff2" as="font">
+  <link rel="preload" href="fonts/Arial-700.woff2" as="font">
+  <title>Forms</title>
+</head>
+<body>
+  <main>
+    <section class="form">
+      <h1>Зарегистрироваться</h1>
+      <div class="form__block">
+        <img src="../img/svg/girl.svg" alt="Форма 1">
+        <button class="form__button form__button--first">Форма 1</button>
+      </div>
+      <div class="form__block">
+        <img src="../img/svg/man.svg" alt="Форма 2">
+        <button class="form__button form__button--second">Форма 2</button>
+      </div>
+    </section>
+  </main>
+  <div class="modal-first visually-hidden" id="first-form">
+    <form class="modal-first__form" action="https://echo.htmlacademy.ru">
+      <label for="first-form-email" id="first-label-email">
+        <input type="text" id="first-form-email" name="first-form-email" placeholder="Email или телефон">
+        <p id="form__new-element"></p>
+      </label>
+      <label for="first-form-city" id="first-label-city">
+        <input type="text" id="first-form-city" name="first-form-city" placeholder="Город">
+        <p id="form__new-element-city"></p>
+      </label>
+      <img src="../img/svg/girl.svg" alt="Форма 1">
+      <div class="modal-first__agreement">
+        <input class="visually-hidden" name="first-form-agreement" id="first-form-agreement" type="checkbox" checked>
+        <label class="modal-first__agreement-label" for="first-form-agreement">Я согласен на&nbsp;обработку моих&nbsp;персональных данных
+          <p id="form__new-element-checkbox"></p>
+        </label>
+      </div>
+      <!-- <input type="button" value="Зарегистрироваться"> -->
+      <button id="send-button-first">Зарегистрироваться</button>
+    </form>
+    <img class="modal-first__close" width="20" height="20" src="../img/svg/modal-cross.svg" alt="Закрыть">
+    <p class="modal-first__fish">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore
+      <br>
+      magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo.
+    </p>
+  </div>
+  <div class="modal-second visually-hidden" id="second-form">
+    <form class="modal-second__form" action="https://echo.htmlacademy.ru">
+      <label for="second-form-first-name" id="second-label-first-name">
+        <input type="text" id="second-form-first-name" name="second-form-first-name" placeholder="Имя">
+        <p id="form__first-name-error"></p>
+      </label>
+      <label for="second-form-last-name" id="second-label-last-name">
+        <input type="text" id="second-form-last-name" name="second-form-last-name" placeholder="Фамилия">
+        <p id="form__last-name-error"></p>
+      </label>
+      <label for="second-form-phone" id="second-label-phone">
+        <input type="text" id="second-form-phone" name="second-form-phone" placeholder="Телефон">
+        <p id="form__phone-error"></p>
+      </label>
+      <label for="second-form-email" id="second-label-email">
+        <input type="text" id="second-form-email" name="second-form-email" placeholder="Email">
+        <p id="form__email-error"></p>
+      </label>
+      <label for="second-form-company-name" id="second-label-company-name">
+        <input type="text" id="second-form-company-name" name="second-form-company-name" placeholder="Название компании">
+        <p id="form__company-name-error"></p>
+      </label>
+      <label for="second-form-state" id="second-label-state">
+        <input type="text" id="second-form-state" name="second-form-state" placeholder="Регион">
+        <p id="form__state-error"></p>
+      </label>
+      <img src="../img/svg/man.svg" alt="Форма 1">
+      <div class="modal-second__agreement">
+        <input class="visually-hidden" name="second-form-agreement" id="second-form-agreement" type="checkbox" checked>
+        <label class="modal-second__agreement-label" id="modal-second__agreement-label" for="second-form-agreement">Я хочу получить рассылку после мероприятия
+          <p id="form__checkbox-error"></p>
+        </label>
+      </div>
+      <!-- <input type="button" value="Зарегистрироваться"> -->
+      <button id="send-button-second">Зарегистрироваться</button>
+    </form>
+    <img class="modal-second__close" width="20" height="20" src="../img/svg/modal-cross.svg" alt="Закрыть">
+    <p class="modal-second__fish">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore
+      <br>
+      magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo.
+    </p>
+  </div>
+  <script src="js/formfirst.min.js"></script>
+  <script src="js/formsecond.min.js"></script>
+</body>
+</html>

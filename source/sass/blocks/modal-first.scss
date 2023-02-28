@@ -1,0 +1,115 @@
+.modal-first {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  z-index: 1;
+  background: $color-default-white;
+  transform: translate(-50%, 0);
+  width: 670px;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.09);
+  padding: 35px;
+}
+
+.modal-first__form {
+  display: grid;
+  grid-template-columns: 368px 1fr;
+}
+
+.modal-first__form label input {
+  min-height: 48px;
+  width: 100%;
+  border: 1px solid $base-bg;
+  border-radius: 3px;
+  padding: 15px 16px;
+  @include font-regular;
+
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  color: $placeholder-color;
+}
+
+.modal-first__form label:nth-of-type(2) input {
+  margin-top: 18px;
+}
+
+.modal-first__form img:first-of-type {
+  grid-column: 2/3;
+  grid-row: 1/5;
+  width: 203px;
+  height: 191px;
+}
+
+.modal-first__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: block;
+}
+
+.modal-first__agreement {
+  display: flex;
+  align-items: start;
+  position: relative;
+  margin-top: 36px;
+}
+
+.modal-first__agreement-label {
+  @include font-regular;
+
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-left: 34px;
+}
+
+.modal-first__agreement-label::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0;
+  transform: translate(0, 25%);
+  width: 16px;
+  height: 16px;
+  background: $checkmark-fill;
+}
+
+.modal-first__agreement input:checked ~ .modal-first__agreement-label::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  transform: translate(30%, 0);
+  width: 10px;
+  height: 10px;
+  background: url("../img/svg/white-checkmark.svg");
+}
+
+.modal-first__form > button {
+  width: 192px;
+  min-height: 46px;
+  padding: 12px 20px;
+  background: $checkmark-fill;
+  color: $color-default-white;
+  border: 0;
+  border-radius: 3px;
+  margin-top: 36px;
+  @include font-regular;
+
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.modal-first__fish {
+  @include font-regular;
+
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  color: $fish-color;
+}

@@ -1,21 +1,54 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: $common-font;
 
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2"),
-//     url("../fonts/rouble.woff") format("woff");
-// }
+  font-display: swap;
+  src:
+    url("../fonts/Arial-400.woff2") format("woff2"),
+    url("../fonts/Arial-400.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: $common-font;
+
+  font-display: swap;
+  src:
+    url("../fonts/Arial-700.woff2") format("woff2"),
+    url("../fonts/Arial-700.woff") format("woff");
+}
 
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: $header-font;
 
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+    url("../fonts/ProximaNovaCond-400.woff2") format("woff2"),
+    url("../fonts/ProximaNovaCond-400.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: $header-font;
+
+  font-display: swap;
+  src:
+    url("../fonts/ProximaNovaCond-700.woff2") format("woff2"),
+    url("../fonts/ProximaNovaCond-700.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: $header-font;
+
+  font-display: swap;
+  src:
+    url("../fonts/ProximaNovaCond-800.woff2") format("woff2"),
+    url("../fonts/ProximaNovaCond-800.woff") format("woff");
 }

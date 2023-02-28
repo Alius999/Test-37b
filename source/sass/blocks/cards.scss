@@ -1,0 +1,26 @@
+.cards {
+  @include vp-1019 {
+    display: grid;
+    grid-template-columns: 241px 225px 242px 225px;
+    grid-gap: 1px;
+    background: $card-border;
+    border: 1px solid $card-border;
+    border-radius: 8px;
+    max-width: 938px;
+    // width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.cards::after {
+  @include vp-1019 {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 10/11;
+    background: $color-default-white;
+    border-radius: 0 0 0 8px;
+  }
+}

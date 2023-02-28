@@ -1,0 +1,21 @@
+.page {
+  min-width: $vp-320;
+  max-width: $vp-700;
+  padding: 70px 16px 62px;
+  background: $color-default-white;
+  margin: 0 auto;
+
+  @include vp-699 {
+    max-width: $vp-1020;
+  }
+
+  @include vp-1019 {
+    max-width: 970px;
+  }
+}
+
+.page h1 {
+  // display: block;
+  text-align: center;
+  margin: 0 0 50px 0;
+}

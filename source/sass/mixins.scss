@@ -74,45 +74,58 @@
   }
 }
 
-// Mobile first
+@mixin vp-699 {
+  @media (min-width: ($vp-700)) {
+    @content;
+  }
+}
 
-// @mixin vp-375 {
-//   @media (min-width: $vp-375) {
-//     @content;
-//   }
-// }
+@mixin vp-1019 {
+  @media (min-width: ($vp-1020)) {
+    @content;
+  }
+}
 
-// @mixin vp-768 {
-//   @media (min-width: $vp-768) {
-//     @content;
-//   }
-// }
+@mixin max-vp-1019 {
+  @media (max-width: ($vp-1020 - 1px)) {
+    @content;
+  }
+}
 
-// @mixin vp-1024 {
-//   @media (min-width: $vp-1024) {
-//     @content;
-//   }
-// }
+// Fonts
 
-// @mixin vp-1280 {
-//   @media (min-width: $vp-1280) {
-//     @content;
-//   }
-// }
+@mixin font-header {
+  font-family: $header-font, $common-font, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
 
-// @mixin vp-1440 {
-//   @media (min-width: $vp-1440) {
-//     @content;
-//   }
-// }
+@mixin font-header-900 {
+  font-family: $header-font, $common-font, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
 
-// @mixin vp-1920 {
-//   @media (min-width: $vp-1920) {
-//     @content;
-//   }
-// }
+@mixin font-header-700 {
+  font-family: $header-font, $common-font, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
-// ---------------------------------
+@mixin font-header-400 {
+  font-family: $header-font, $common-font, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-// не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
-// этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
+@mixin font-bold {
+  font-family: $common-font, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin font-regular {
+  font-family: $common-font, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -12,13 +12,23 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
+$base-bg:                           #e5e5e5;
+$card-border:                       #d4eaff;
+$base-gray:                         #333333;
+$active-btn:                        #e8178a;
+$checkmark-fill:                    #0f8fee;
+$cross-fill:                        #a3d6ff;
+$placeholder-color:                 #b3b3b3;
+$fish-color:                        #999999;
 
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography
-// ---------------------------------
+
+$common-font: "Arial";
+$header-font: "Proxima Nova Condensed";
 
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
@@ -45,7 +55,10 @@ $trans-600:                         0.6s $tf-default;
 
 $vp-320:                            320px;
 $vp-375:                            375px;
+$vp-700:                            700px;
 $vp-768:                            768px;
+$vp-940:                            940px;
+$vp-1020:                           1020px;
 $vp-1024:                           1024px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
